@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quantify.ttf">
+            <string>Quantify</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-BM-qxb">
+                                <rect key="frame" x="197" y="571" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2024 MAKSAT Corp. All right reserwed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib6-8n-hqL">
+                                <rect key="frame" x="103.5" y="843" width="207.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Quantify" family="Quantify" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo wt" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-aE-dPn">
+                                <rect key="frame" x="87" y="389" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GZT-xq-BOt"/>
+                                    <constraint firstAttribute="width" constant="240" id="eQj-4d-xxs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="eg5-kK-DjZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="tdW-t6-fSe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="03 Dark Gray"/>
+                        <constraints>
+                            <constraint firstItem="ib6-8n-hqL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="23m-Q5-vr9"/>
+                            <constraint firstItem="xNA-BM-qxb" firstAttribute="top" secondItem="Vpp-aE-dPn" secondAttribute="bottom" constant="54" id="EAE-6q-8Ob"/>
+                            <constraint firstItem="xNA-BM-qxb" firstAttribute="centerX" secondItem="Vpp-aE-dPn" secondAttribute="centerX" id="H1t-ug-TDr"/>
+                            <constraint firstItem="Vpp-aE-dPn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TTn-O5-Svz"/>
+                            <constraint firstItem="Vpp-aE-dPn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ayu-1o-UDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ib6-8n-hqL" secondAttribute="bottom" constant="5" id="rmw-uB-Ey7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zrp-as-9k0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.31884057971024" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo wt" width="479" height="203"/>
+        <namedColor name="03 Dark Gray">
+            <color red="0.035294117647058823" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
